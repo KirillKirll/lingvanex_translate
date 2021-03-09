@@ -1,0 +1,129 @@
+.loader-container {
+    font-size: 10px;
+    width: 100px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    border-collapse: collapse;
+    vertical-align: top;
+    position: absolute;
+    z-index: 9999;
+    top: 39%;
+    left: 42%;
+  }
+  
+  .loader-1 {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    margin: -25px auto 0;
+    border-radius: 50%;
+    background: #2196f3;
+    background: -moz-linear-gradient(
+      left,
+      #2196f3 10%,
+      rgba(255, 255, 255, 0) 50%
+    );
+    background: -webkit-linear-gradient(
+      left,
+      #2196f3 10%,
+      rgba(255, 255, 255, 0) 50%
+    );
+    background: -o-linear-gradient(left, #2196f3 10%, rgba(255, 255, 255, 0) 50%);
+    background: -ms-linear-gradient(
+      left,
+      #2196f3 10%,
+      rgba(255, 255, 255, 0) 50%
+    );
+    background: linear-gradient(
+      to right,
+      #2196f3 10%,
+      rgba(255, 255, 255, 0) 50%
+    );
+    position: relative;
+    -webkit-animation: loader-1 1.5s infinite linear;
+    animation: loader-1 1.5s infinite linear;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  
+  .loader-1:before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #2196f3;
+    border-radius: 100% 0 0 0;
+  }
+  
+  .loader-1:after {
+    content: "";
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background: white;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  
+  @-webkit-keyframes loader-1 {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes loader-1 {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media only screen and (max-width: 900px) {
+    .loader-container {
+      font-size: 10px;
+      width: 100px;
+      height: 50px;
+      display: inline-block;
+      text-align: center;
+      border-collapse: collapse;
+      vertical-align: top;
+      position: absolute;
+      z-index: 9999;
+      top: 39%;
+      left: 42%;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .loader-container {
+      font-size: 10px;
+      width: 100px;
+      height: 50px;
+      display: inline-block;
+      text-align: center;
+      border-collapse: collapse;
+      vertical-align: top;
+      position: absolute;
+      z-index: 9999;
+      top: 33%;
+      left: 37%;
+    }
+  }

@@ -1,0 +1,271 @@
+body {
+    background-color: #f3f7fa;
+  }
+  
+  * {
+    margin: 0;
+  }
+  
+  textarea {
+    margin: 5px;
+  }
+  
+  .App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  .header {
+    height: 70px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .mainTitle {
+    position: absolute;
+    top: 15px;
+  }
+  
+  .translatorBox {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .translator {
+    background-color: white;
+    border-top-left-radius: 20px 15px;
+    border-top-right-radius: 20px 15px;
+    height: 719px;
+    width: 80%;
+  }
+  
+  .selectBox {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .selectList {
+    border: none;
+    appearance: none;
+    font-size: 1em;
+    letter-spacing: 1px;
+    outline: none;
+    color: #464646;
+  }
+  
+  .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .from {
+    font-family: Arial;
+  }
+  
+  .to {
+    margin-left: 8px;
+  }
+  
+  .changeButton {
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .translate-from {
+    width: 90%;
+    height: 80%;
+    padding: 10px;
+    font-size: 20px;
+    resize: none;
+    border-radius: 10px;
+    border: 2px solid #a7a7a7;
+  }
+  
+  .translate-from:focus {
+    width: 90%;
+    height: 80%;
+    padding: 10px;
+    font-size: 20px;
+    border: 2px solid #2196f3;
+    resize: none;
+    border-radius: 10px;
+    outline: none;
+  }
+  
+  .fromBox {
+    width: 600px;
+    height: 150px;
+    position: relative;
+  }
+  
+  .position {
+    width: 600px;
+    position: relative;
+    height: 150px;
+  }
+  
+  .translate-to {
+    width: 90%;
+    height: 80%;
+    padding: 10px;
+    font-size: 20px;
+    resize: none;
+    outline: none;
+    border-radius: 10px;
+    position: inherit;
+    border: 2px solid #a7a7a7;
+  }
+  
+  .textLoader {
+    z-index: 9999;
+    position: absolute;
+  }
+  
+  .select-title {
+    margin-right: 5px;
+  }
+  
+  .removeBox {
+    width: 22px;
+    height: 22px;
+    z-index: 2;
+    position: absolute;
+    top: 3%;
+    right: 25px;
+  }
+  
+  .removeButton {
+    position: absolute;
+    right: 4%;
+    top: 10px;
+    outline: none;
+    border: 2px solid #a7a7a7;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background: none;
+    cursor: pointer;
+    opacity: 0.3;
+    width: 22px;
+    height: 22px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .isActiseRemoveButton {
+    opacity: 1;
+  }
+  
+  .removeButton:before,
+  .removeButton:after {
+    position: absolute;
+    top: 2px;
+    left: 8px;
+    content: " ";
+    height: 14px;
+    width: 2px;
+    background-color: #888888;
+  }
+  .removeButton:before {
+    transform: rotate(45deg);
+  }
+  .removeButton:after {
+    transform: rotate(-45deg);
+  }
+  
+  .historyBox {
+    margin: 15px;
+  }
+  
+  .history {
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .historyLabel {
+    width: 90%;
+    text-align: left;
+  }
+  
+  .history-data-box {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+  }
+  
+  .historyData {
+    width: 90%;
+    text-align: left;
+    display: flex;
+    flex-flow: wrap;
+  }
+  
+  .history-buttons-box {
+    margin: 10px;
+  }
+  
+  .historyButton {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #a7a7a7;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 15px;
+    font-weight: 100;
+    padding: 10px;
+  }
+  
+  .showHistoryButton {
+    width: 20px;
+    height: 20px;
+  }
+  
+  @media only screen and (max-width: 900px) {
+    .form {
+      flex-direction: column;
+    }
+  
+    .translator {
+      width: 90%;
+    }
+  
+    .fromBox {
+      width: 90%;
+      margin-bottom: 15px;
+    }
+  
+    .position {
+      width: 90%;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .translator {
+      width: 100%;
+    }
+  
+    .fromBox {
+      margin-bottom: 0;
+    }
+  
+    .translate-from {
+      height: 70%;
+    }
+  
+    .translate-from:focus {
+      height: 70%;
+    }
+  
+    .translate-to {
+      height: 70%;
+    }
+  }
